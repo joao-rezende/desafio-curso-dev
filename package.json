@@ -1,0 +1,16 @@
+{
+  "name": "desafio-curso-dev",
+  "version": "1.0.0",
+  "description": "Desafio feito no curso.dev de Filipe Deschamps na aula do dia 4 com título \"Desafio Importante\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
