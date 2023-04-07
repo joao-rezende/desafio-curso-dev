@@ -39,11 +39,15 @@ function Home() {
       const data = await res.json();
       document.getElementById("city-name").innerText = data.city;
 
-      let device = "";
-      if (!navigator.userAgentData.mobile) {
-        device = "PC " + navigator.userAgentData.platform;
-      } else if (navigator.userAgentData.platform == "Android") {
-        device = "Smartphone Android";
+      let device = "Dispositivo";
+      if (navigator && navigator.userAgentData) {
+        if (!navigator.userAgentData.mobile) {
+          device = "PC " + navigator.userAgentData.platform;
+        } else if (navigator.userAgentData.platform == "Android") {
+          device = "Smartphone Android";
+        } else {
+          device = "iPhone";
+        }
       }
 
       document.getElementById("device").innerText = device;
